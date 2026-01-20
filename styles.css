@@ -104,8 +104,9 @@ a {
 
 .project-card img{
   width: 100%;
-  height: auto;        /* deixa a altura natural */
-  object-fit: contain; /* garante que não corta */
+  height: 220px;        /* pode ajustar */
+  object-fit: contain;  /* não corta */
+  background: #fff;     /* preenche o espaço vazio */
   border-radius: 12px;
   display: block;
   margin-bottom: 12px;
