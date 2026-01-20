@@ -267,3 +267,35 @@ h2 {
   }
 }
 
+/* ===== PROJETO EM LARGURA TOTAL ===== */
+
+.project-wide{
+  margin-top: 28px;
+}
+
+.project-image img{
+  width: 100%;
+  max-width: 720px;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.project-text-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Texto mais confortável (igual Sobre mim) */
+.project-text-grid p,
+.project-text-grid li{
+  font-size: 16.5px;
+  line-height: 1.75;
+}
+
+@media (max-width: 900px){
+  .project-text-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
