@@ -395,4 +395,63 @@ h2 {
   }
 }
 
+/* ===== PROJETO 02 — LAYOUT CANVA ===== */
+
+.p2-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.p2-hero img{
+  width: 100%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+.p2-titlebox{
+  background: #fff;
+  border: 1px solid rgba(31, 95, 174, 0.35);
+  border-radius: 14px;
+  padding: 14px 16px;
+  text-align: center;
+  color: var(--brand);
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+
+.p2-summary .info-box p{
+  margin-top: 0;
+}
+
+.p2-details{
+  /* fica na base esquerda */
+}
+
+.p2-side{
+  display: grid;
+  gap: 16px;
+}
+
+.p2-miniimg img{
+  width: 100%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 900px){
+  .p2-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
