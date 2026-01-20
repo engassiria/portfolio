@@ -251,3 +251,19 @@ h2 {
   }
 }
 
+
+/* ===== GRID DE TEXTO ABAIXO DA IMAGEM ===== */
+
+.detail-text-grid{
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+@media (max-width: 900px){
+  .detail-text-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
