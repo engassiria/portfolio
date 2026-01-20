@@ -524,6 +524,175 @@ h2 {
     justify-content: center;
   }
 }
+/* ====== Layout base ====== */
+:root{
+  --maxw: 1040px;
+  --gap: 24px;
+  --radius: 14px;
+  --border: #e8eef6;
+  --text: #0f172a;
+  --muted: #475569;
+  --bg: #ffffff;
+  --card: #ffffff;
+  --shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+body{
+  color: var(--text);
+}
+
+main{
+  width: 100%;
+}
+
+.container{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+/* títulos e texto */
+h1, h2, h3{
+  letter-spacing: -0.02em;
+}
+p{
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ====== Hero / topo ====== */
+.hero{
+  text-align: center;
+  padding: 12px 0 26px;
+}
+.hero h1{
+  font-size: clamp(24px, 2.4vw, 34px);
+  margin: 0 0 8px;
+}
+.hero p{
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+/* ====== Grid geral ====== */
+.grid{
+  display: grid;
+  gap: var(--gap);
+}
+
+/* desktop: 2 colunas quando indicado */
+@media (min-width: 980px){
+  .grid-2{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* ====== Cards ====== */
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.card-body{
+  padding: 18px 18px 16px;
+}
+
+.card-title{
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.card-meta{
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* imagem padrão */
+.card img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* ====== Projetos (cards pequenos) ====== */
+.project-grid{
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 980px){
+  .project-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ====== Projeto detalhado (um por linha) ====== */
+.project-detail{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 980px){
+  /* imagem + texto lado a lado no desktop */
+  .project-detail{
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: start;
+  }
+}
+
+/* caixas internas (resumo, infos etc) */
+.kpi-grid{
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 520px){
+  .kpi-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.kpi{
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fbfdff;
+}
+.kpi h4{
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: #1e3a8a;
+}
+.kpi ul{
+  margin: 0;
+  padding-left: 16px;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+/* ====== Seções ====== */
+.section{
+  margin-top: 26px;
+}
+.section h2{
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+/* opcional: limitar largura do "Sobre mim" pra ficar elegante */
+.about p{
+  max-width: 680px;
+}
+
 
 
 
