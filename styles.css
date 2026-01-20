@@ -344,3 +344,55 @@ h2 {
   }
 }
 
+
+/* ===== PROJETO 01: RESULTADOS ULS ===== */
+
+.uls-top img{
+  width: 100%;
+  max-width: 950px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.img-caption{
+  margin: 10px auto 0;
+  max-width: 950px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.uls-bottom{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.uls-figure h3{
+  margin: 0 0 10px;
+  color: var(--brand);
+}
+
+.uls-figure img{
+  width: 100%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 900px){
+  .uls-bottom{
+    grid-template-columns: 1fr;
+  }
+  .img-caption{
+    text-align: left;
+    padding: 0 6px;
+  }
+}
+
+
