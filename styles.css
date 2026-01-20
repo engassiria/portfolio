@@ -299,3 +299,48 @@ h2 {
   }
 }
 
+/* ===== SUBSECAO: DETALHAMENTO (PROJETO 01) ===== */
+
+.project-subdetail .subdetail-lead{
+  margin-top: -6px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.subdetail-grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.subdetail-figure img{
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+/* subtitulos dentro da caixa */
+.info-subtitle{
+  margin: 14px 0 8px;
+  font-size: 14px;
+  color: var(--brand);
+  font-weight: 800;
+}
+
+/* melhorar leitura */
+.project-subdetail .info-box li,
+.project-subdetail .info-box p{
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+@media (max-width: 900px){
+  .subdetail-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
